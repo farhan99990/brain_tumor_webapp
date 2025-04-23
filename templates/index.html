@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>⚛️ Atom Hospital | Patient Entry</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>⚛️ Atom Hospital</h1>
+    <p>House 10, Road 2, Mirpur 1, Dhaka, Bangladesh | Phone: 01000000259</p>
+  </header>
+  <main>
+    <h2>Upload MRI or CT Scan</h2>
+    <form method="POST" enctype="multipart/form-data">
+      <label>Patient's Name:</label>
+      <input type="text" name="name" required>
+      <label>Age:</label>
+      <input type="number" name="age" required>
+      <label>Gender:</label>
+      <select name="gender" required>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+      <label>Contact Number:</label>
+      <input type="text" name="contact" required>
+      <label>Scan Type:</label>
+      <select name="scan_type" required>
+        <option value="MRI">MRI</option>
+        <option value="CT">CT</option>
+      </select>
+      <label>Upload Image:</label>
+      <input type="file" name="image" required>
+      <button type="submit">Submit</button>
+      <br>
+    </form>
+  </main>
+  <footer>Developed by Muhammed Farhan Sadique Mahi || Manarat International University</footer>
+</body>
+</html>

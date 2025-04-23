@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Atom Hospital | Diagnosis Result</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>⚛️ Atom Hospital</h1>
+    <p>House 10, Road 2, Mirpur 1, Dhaka, Bangladesh | Phone: 01000000259</p>
+  </header>
+  <main>
+    <h2>Scan Result Report</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+      <tr>
+        <td><strong>Patient's Name</strong></td><td>{{ name }}</td>
+        <td><strong>Age</strong></td><td>{{ age }}</td>
+      </tr>
+      <tr>
+        <td><strong>Gender</strong></td><td>{{ gender }}</td>
+        <td><strong>Contact</strong></td><td>{{ contact }}</td>
+      </tr>
+      <tr>
+        <td><strong>Scan Type</strong></td><td>{{ scan_type }}</td>
+        <td><strong>Date</strong></td><td>{{ date }}</td>
+      </tr>
+      <tr>
+        <td><strong>Scan No</strong></td><td colspan="3">{{ scan_no }}</td>
+      </tr>
+      <tr>
+        <td><strong>Patient ID</strong></td><td colspan="3">{{ patient_id }}</td>
+      </tr>      
+    </table>
+
+    <h3>Result: {{ result }}</h3>
+    <p><strong>Confidence:</strong> {{ confidence }}%</p>
+
+    <h3>Uploaded Scan:</h3>
+    <img src="/{{ image_path }}" width="300" alt="Uploaded MRI/CT Image">
+
+    <br><br>
+    <a href="/download/{{ report_filename }}" class="btn">Download Medical Report (PDF)</a>
+    <br><br> 
+
+  </main>
+  <footer>
+    Developed by Muhammed Farhan Sadique Mahi || Manarat International University
+  </footer>
+</body>
+</html>

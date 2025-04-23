@@ -1,0 +1,71 @@
+
+body {
+  background-color: #e6f4ea;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  /* background-color: #2e7d32; */
+  background: #020024;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+main {
+  padding: 30px;
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+input, select {
+  padding: 8px;
+  font-size: 16px;
+}
+button {
+  margin-top: 20px;
+  padding: 10px;
+  /* background-color: #2e7d32; */
+  background: #020024;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 0.71) 0%, rgba(0, 212, 255, 1) 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #297dd7;
+}
+footer {
+  /* background-color: #2e7d32; */
+  background: #020024;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.75) 0%, rgba(9, 9, 121, 0.67) 39%, rgba(0, 212, 255, 1) 100%);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  /* background: #007bff; */
+  background: #020024;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 0.71) 0%, rgba(0, 212, 255, 1) 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.btn:hover {
+  background: #297dd7;
+}
